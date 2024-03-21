@@ -94,6 +94,7 @@ function fetchWeather(url) {
       fetchUnsplashPhoto(cityName)
         .then((imageUrl) => {
           console.log(imageUrl);
+          document.getElementById("weather-image").style.display = "block";
           document.getElementById("weather-image").src = imageUrl;
         })
         .catch((error) => {
@@ -117,8 +118,8 @@ function displayTemperatureChart(temperatures, cityName) {
         {
           label: `Temperature (°C) in ${cityName}`,
           data: temperatures,
-          backgroundColor: "rgba(255, 99, 132, 0.2)",
-          borderColor: "rgba(255, 99, 132, 1)",
+          backgroundColor: "#31332A",
+          borderColor: "#FFFFFF",
           borderWidth: 5,
         },
       ],
@@ -164,6 +165,6 @@ async function fetchUnsplashPhoto(cityName) {
     return photo.urls.regular;
   } catch (error) {
     console.error("Error fetching Unsplash photo:", error);
-    return "path/to/default/image.jpg";
+    return "/image.jpg";
   }
 }

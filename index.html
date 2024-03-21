@@ -7,19 +7,15 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <h1>Weather for You</h1>
-    <form id="weather-form">
-      <label for="city">Enter City:</label>
-      <input type="text" id="city" name="city" placeholder="City Name" /> <br />
-      <label for="city"
-        >Put in the name of the City followed by a comma and the country code
-        <br />
-        for example: London, UK</label
-      >
-      <br />
-      <button type="submit">Get Weather</button>
-    </form>
-    <div id="weather-info"></div>
+    <section class="info">
+      <h1>Weather for You</h1>
+      <form id="weather-form">
+        <label for="city">Enter City:</label>
+        <input type="text" id="city" name="city" placeholder="City Name " />
+        <button type="submit">Get Weather</button>
+      </form>
+      <div id="weather-info"></div>
+    </section>
     <section class="weather-container">
       <img src="" alt="" id="weather-image" />
       <canvas id="weather-chart"></canvas>
