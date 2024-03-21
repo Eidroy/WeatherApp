@@ -4,7 +4,7 @@ const weatherInfo = document.getElementById("weather-info");
 const APICall =
   "https://api.openweathermap.org/data/2.5/forecast?lat={lat}&lon={lon}&units=metric&appid=1ddcbac86962f66da4105d88357161ad";
 const GeoCall =
-  "http://api.openweathermap.org/geo/1.0/direct?q={city},{country_code}&limit=1&appid=1ddcbac86962f66da4105d88357161ad";
+  "https://api.openweathermap.org/geo/1.0/direct?q={city},{country_code}&limit=1&appid=1ddcbac86962f66da4105d88357161ad";
 
 const lastCity = localStorage.getItem("lastCity");
 if (lastCity) {
